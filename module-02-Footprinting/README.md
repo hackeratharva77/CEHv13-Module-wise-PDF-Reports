@@ -51,27 +51,6 @@ Footprinting helps attackers (and security professionals) understand the digital
 
 ---
 
-## 🧪 Hands-on Labs
-### **Lab 1: WHOIS Lookup**
-- Perform WHOIS lookup on a target domain.
-
-### **Lab 2: DNS Enumeration**
-- Use `nslookup` or `dig` to extract DNS records.
-
-### **Lab 3: Email Harvesting**
-- Collect emails using **theHarvester**.
-
-### **Lab 4: Search Engine Footprinting**
-- Use **Google Dorks** to find sensitive files or exposed directories.
-
-### **Lab 5: Metadata Extraction**
-- Extract document metadata with **ExifTool** or **FOCA**.
-
-### **Lab 6: Subdomain Discovery**
-- Identify subdomains using tools like **Sublist3r** or **Amass**.
-
----
-
 ## 🛡️ Defensive Countermeasures
 - Limit public exposure of sensitive data.
 - Use privacy protection for WHOIS records.
