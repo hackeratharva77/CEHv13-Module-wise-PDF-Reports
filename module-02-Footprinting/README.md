@@ -1,127 +1,99 @@
-# 🕵️ Module 02 – Footprinting Report
+# 🕵️‍♂️ Footprinting – Complete Guide
 
-## 📖 Overview
-This repository contains the practical report for **Module 02 – Footprinting** from CEHv13.
-
-Footprinting is the first phase of Ethical Hacking where information about a target system, organization, or network is collected using passive and active reconnaissance techniques.
-
----
-
-## 🎯 Objectives
-
-- Understand footprinting concepts
-- Perform passive and active reconnaissance
-- Use Google Dorking for information gathering
-- Conduct WHOIS and DNS lookup
-- Perform Network and Email footprinting
-- Use tools like Recon-ng and Sherlock
+## 📌 Introduction
+**Footprinting** is the first phase of ethical hacking and penetration testing.  
+It involves gathering information about the target system, organization, or network to identify potential attack vectors.  
+Footprinting helps attackers (and security professionals) understand the digital footprint of their target.
 
 ---
 
-# 1️⃣ Introduction to Footprinting
-
-Footprinting is the process of collecting information about a target before performing a security assessment.
-
-### Types of Footprinting:
-- Passive Footprinting
-- Active Footprinting
-
----
-
-# 2️⃣ Google Dorking
-
-Google Dorking uses advanced search operators to find publicly available information.
-
-### Common Operators:
-site:example.com
-filetype:pdf site:example.com
-intitle:"login"
-inurl:admin
+## 🎯 Objectives of Footprinting
+- Collect publicly available information about the target.
+- Map the target’s digital presence (domains, subdomains, IP ranges).
+- Identify technologies used by the target (servers, frameworks, apps).
+- Gather employee or organizational details for social engineering.
+- Prepare for further penetration testing phases.
 
 ---
 
-# 3️⃣ Internet Research Services
+## 📂 Types of Footprinting
+1. **Passive Footprinting**
+   - Information gathering without direct interaction.
+   - Example: WHOIS, DNS records, social media, job postings.
 
-## 🔹 Netcraft
-Used to identify:
-- Hosting provider
-- Server details
-- Technology stack
-
-## 🔹 DNS Dumpster
-Used for:
-- Subdomain discovery
-- DNS mapping
+2. **Active Footprinting**
+   - Direct interaction with the target system/network.
+   - Example: Nmap scans, traceroute, ping sweeps.
 
 ---
 
-# 4️⃣ Social Media Footprinting
-
-## 🔹 Sherlock
-Used for username enumeration.
-
-Example:python3 sherlock username
-
----
-
-# 5️⃣ WHOIS Footprinting
-
-WHOIS provides:
-- Domain owner details
-- Registrar information
-- Registration & expiry dates
-- Name servers
+## 🛠️ Techniques of Footprinting
+- **Search Engines** – Google Dorks, Bing, Shodan, Censys.
+- **WHOIS Lookup** – Domain registration details.
+- **DNS Enumeration** – NSLookup, dig, dnsenum, Fierce.
+- **Social Media Profiling** – LinkedIn, Twitter, Facebook intelligence.
+- **Email Harvesting** – theHarvester, Hunter.io.
+- **Website Footprinting** – Wappalyzer, WhatWeb, BuiltWith.
+- **Network Recon** – Traceroute, Ping, Nmap.
+- **Metadata Extraction** – ExifTool, FOCA.
+- **Public Data Sources** – Job postings, press releases, Google Alerts.
 
 ---
 
-# 6️⃣ DNS Footprinting
-
-## NSLookup (CLI)
-nslookup example.com
-nslookup -type=mx example.com
-Used to retrieve DNS records like:
-- A records
-- MX records
-- NS records
-
----
-
-# 7️⃣ Network Footprinting
-
-## Windows
-tracert example.com
-
-## Linux
-traceroute example.com
-Used to trace routing path and identify hops.
+## 🧰 Common Tools
+- **theHarvester** – Email and domain information gathering.
+- **Maltego** – Relationship mapping and intelligence.
+- **Recon-ng** – Web-based reconnaissance framework.
+- **Shodan** – Search engine for IoT and connected devices.
+- **Censys** – Internet-wide scanning engine.
+- **FOCA** – Metadata analysis tool.
+- **OSINT Framework** – Collection of OSINT resources.
 
 ---
 
-# 8️⃣ Email Footprinting
+## 🧪 Hands-on Labs
+### **Lab 1: WHOIS Lookup**
+- Perform WHOIS lookup on a target domain.
 
-## 🔹 GSA Email Spider
-Extracts publicly available email addresses.
+### **Lab 2: DNS Enumeration**
+- Use `nslookup` or `dig` to extract DNS records.
 
-## 🔹 MX Toolbox
-Used for:
-- MX record lookup
-- Mail server analysis
+### **Lab 3: Email Harvesting**
+- Collect emails using **theHarvester**.
 
----
+### **Lab 4: Search Engine Footprinting**
+- Use **Google Dorks** to find sensitive files or exposed directories.
 
-# 9️⃣ Recon-ng
+### **Lab 5: Metadata Extraction**
+- Extract document metadata with **ExifTool** or **FOCA**.
 
-Recon-ng is an OSINT framework used for automated reconnaissance.
-Basic workflow:
-marketplace search
-modules load
-run
-
+### **Lab 6: Subdomain Discovery**
+- Identify subdomains using tools like **Sublist3r** or **Amass**.
 
 ---
 
-# ⚠️ Disclaimer
+## 🛡️ Defensive Countermeasures
+- Limit public exposure of sensitive data.
+- Use privacy protection for WHOIS records.
+- Disable directory listing on web servers.
+- Train employees against oversharing on social media.
+- Monitor OSINT sources for data leaks.
+- Regularly audit digital footprint of the organization.
 
-This project is created strictly for educational purposes only.
+---
 
-All demonstrations were performed in a controlled lab environment. Unauthorized reconnaissance on real systems without permission is illegal.
+## 📄 Reporting
+A proper **Footprinting Report** should include:
+- Target information summary.
+- List of discovered domains, subdomains, IPs.
+- Employee or email addresses (if any).
+- Tools and methods used.
+- Risk analysis of exposed information.
+- Defensive recommendations.
+
+---
+
+## ⚠️ Disclaimer
+This content is for **educational and authorized penetration testing only**.  
+Unauthorized reconnaissance and footprinting of systems without permission is **illegal**.
+
